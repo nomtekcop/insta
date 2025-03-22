@@ -14,7 +14,7 @@ def check_for_new_post():
     )
 
     os.makedirs(SAVE_FOLDER, exist_ok=True)
-
+    L.login("pryia_damlas", "k73ds10p63")
     if os.path.exists(DATA_FILE):
         with open(DATA_FILE, "r") as f:
             last_saved_id = json.load(f).get("last_post_id")
