@@ -12,9 +12,9 @@ def check_for_new_post():
         save_metadata=False,
         download_comments=False
     )
-
-    os.makedirs(SAVE_FOLDER, exist_ok=True)
     L.login("pryia_damlas", "k73ds10p63")
+    os.makedirs(SAVE_FOLDER, exist_ok=True)
+    
     if os.path.exists(DATA_FILE):
         with open(DATA_FILE, "r") as f:
             last_saved_id = json.load(f).get("last_post_id")
