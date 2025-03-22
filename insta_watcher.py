@@ -2,7 +2,7 @@
 import instaloader, os, json, glob
 
 def check_for_new_post():
-    TARGET_USERNAME = "yezyizhere"
+    TARGET_USERNAME = "pryia_damlas"
     SAVE_FOLDER = "downloaded_photos"
     DATA_FILE = "last_post.json"
 
